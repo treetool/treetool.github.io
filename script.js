@@ -48,8 +48,8 @@ var bonus_flavor = [
   //Prints dice roll to the page
 
 function printNumber(number, elementId) {
-    var placeholder = document.getElementById(elementId);
-    placeholder.innerHTML = number;
+    var die = document.getElementById(elementId);
+    die.innerHTML = number;
     }
 
   var button = document.getElementById('button');
@@ -59,8 +59,8 @@ function rollDice() {
     var climber_system_state_result = dice.roll(climber_system_state);
     var rescuer_location_and_rope_result = dice.roll(rescuer_location_and_rope);
     var bonus_flavor_result = dice.roll(bonus_flavor);
-    printNumber(system_type_result, "placeholder1");
-    printNumber(climber_system_state_result, "placeholder2")
-    printNumber(rescuer_location_and_rope_result, "placeholder3")
-    printNumber(bonus_flavor_result, "placeholder4")
+    printNumber(system_type_result, "die1");
+    printNumber(climber_system_state_result, "die2")
+    printNumber(rescuer_location_and_rope_result, "die3")
+    printNumber(bonus_flavor_result, "die4")
     };
