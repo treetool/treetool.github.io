@@ -3,14 +3,15 @@
     <script src="./script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
     <link rel="stylesheet" href="css/rescue-dice-style.css">
+    <link rel="stylesheet" href="css/light-mode.css">
     <link rel="icon" href="favicon.png" type="image/png" sizes="128x128">
-</head>
+</head> 
 
-<body onload="rollDice()">
+<body>
 <div class='button-container header multi'>
-    <a href="info.html"><div class='button mini-button dark'>ⓘ</div></a>
+    <a href="info.html"><div class='button mini-button light'>ⓘ</div></a>
     <button id="button" class="button center-button pressable" onclick="rollDice()">Roll All</button>
-    <a href="index-light.html"><div class='button mini-button light'>☼</div></a>
+    <a href="index.html"><div class='button mini-button dark'>☼</div></a>
 </div>
 
 <div class='die-array-buttons'>
@@ -25,6 +26,5 @@
     <div id="die3" class=" die-frame"></div>
     <div id="die4" class=" die-frame"></div>
 </div>
-
 </body>
 </html>
