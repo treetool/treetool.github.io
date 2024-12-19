@@ -43,7 +43,9 @@ body {
     cursor: pointer;
     text-decoration: none;
     }
-a & span.button { text-decoration: none;}    
+a & span.button { 
+    text-decoration: none;
+}    
 .button:active {
         color: lightskyblue;
         background-color: navy;
@@ -53,9 +55,9 @@ a & span.button { text-decoration: none;}
     margin-bottom: 6px;
     }
 .pressable:active {
-    box-shadow: 0px 1px whitesmoke;
+    box-shadow: 0px 2px whitesmoke;
     position: relative;
-    bottom: -5px;
+    bottom: -4px;
     }
 .center-button {
     font-weight: bold;
@@ -93,7 +95,6 @@ a & span.button { text-decoration: none;}
     display:flex; 
     flex-direction: row; 
     justify-content: center; 
-    /* align-items: center; */
     align-items: stretch;
     max-width: 900px;
     text-align: center;
@@ -102,7 +103,6 @@ a & span.button { text-decoration: none;}
     display:flex; 
     flex-direction: row; 
     justify-content: space-around; 
-    /* align-items: center; */
     align-items: stretch;
     max-width: 900px;
     text-align: center;
@@ -132,8 +132,7 @@ a & span.button { text-decoration: none;}
     }
 .die-title {
     font-size: 24;
-    color: navy;
-    background-color: transparent;
+    padding: 10px;
     }
 
 h2 {
@@ -200,15 +199,12 @@ hr {
         color: lightskyblue;
         background-color: navy;
         }
-    .die-title:hover {
-        color: lightskyblue;
+    .button.light:hover {
+        color: whitesmoke;
+        background-color: navy;
         }
     .button.dark:hover {
         background-color: whitesmoke;
         color: navy;
-        }
-    .button.light:hover {
-        color: whitesmoke;
-        background-color: navy;
         }
     }
