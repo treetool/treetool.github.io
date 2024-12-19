@@ -28,14 +28,11 @@ body {
     justify-content: space-around; 
     }
 #button {
-    border-radius: 6px;
-    border: none;
     font-weight: bold;
     padding: 10px;
     text-transform: uppercase;
     width: 400px;
     height: 72px;
-    cursor: pointer;
     font-size: 36;
     }
 .button {
@@ -44,12 +41,13 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
     }
-.button:hover, .button:active {
-    color: lightskyblue;
-    background-color: navy;
-    }
-
+a & span.button { text-decoration: none;}    
+.button:active {
+        color: lightskyblue;
+        background-color: navy;
+        }
 .pressable {
     box-shadow: 0px 6px whitesmoke;
     margin-bottom: 6px;
@@ -66,6 +64,11 @@ body {
     height: 52px;
     font-size: 36;
     }
+.center-filler {
+    padding: 10px;
+    width: 380px;
+    height: 52px;
+}
 .sub-button {
     width: 90%;
     height: auto;
@@ -74,13 +77,12 @@ body {
     padding: 2px;
     border-radius: 10px;
     }
-
-.mini-button, .mini-button:hover, .mini-button:active {
+.mini-button {
     padding: 2px;
     width: 52px;
     height: 52px;
     font-size: 36;
-}
+    }
 .left {
     padding-left: 20px;
     }
@@ -133,9 +135,7 @@ body {
     color: navy;
     background-color: transparent;
     }
-.die-title-:hover {
-    color: lightskyblue;
-    }
+
 h2 {
     font-weight: bold;
     color: wheat;
@@ -172,6 +172,11 @@ h2.die-result-subheading {
     padding-left: 4%;
     padding-right: 4%;
     }
+#info-page a:active {
+    color: navy;
+    background-color: skyblue;
+    border: 1px 2px grey;
+    }
 #info-page img {
     max-width: 50%;
     }
@@ -181,20 +186,29 @@ hr {
     border: 2px solid gray;
     border-radius: 10px;  
     }
-
 .light {
     background-color: whitesmoke;
     color: navy;
     }
-.button.light:hover {
-    color: whitesmoke;
-    background-color: navy;
-    }
+
 .dark {
     background-color: navy;
     color: whitesmoke;
     }
-.button.dark:hover {
-    background-color: whitesmoke;
-    color: navy;
+@media (hover: hover) {
+    .button:hover {
+        color: lightskyblue;
+        background-color: navy;
+        }
+    .die-title:hover {
+        color: lightskyblue;
+        }
+    .button.dark:hover {
+        background-color: whitesmoke;
+        color: navy;
+        }
+    .button.light:hover {
+        color: whitesmoke;
+        background-color: navy;
+        }
     }

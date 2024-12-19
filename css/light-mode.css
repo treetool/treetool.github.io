@@ -6,7 +6,7 @@
     color: lightskyblue;
     background-color: navy;
     }
-.button:hover, .button:active {
+.button:active {
     color: lightskyblue;
     background-color: navy;
     }
@@ -20,27 +20,18 @@
     background-color: lightskyblue;
     color: navy;
     }
-.button.light:hover {
-    color: lightskyblue;
-    background-color: navy;
-    }
 .dark {
     background-color: black;
     color: whitesmoke;
     }
-.button.dark:hover {
-    background-color: lightskyblue;
-    color: navy;
-    }
+
 .die-frame {
     border-color: grey;
     }
 .die-title {
     color: lightskyblue;
     }
-.die-title-hover {
-    color: navy;
-    }
+
 h2 {
     color: darkgreen;
     }
@@ -52,4 +43,22 @@ h2 {
     }
 hr {
     border-color: gray; 
+    }
+
+@media (hover: hover) {
+    .button:hover {
+        color: lightskyblue;
+        color: whitesmoke;
+        }
+    .button.light:hover {
+        color: lightskyblue;
+        background-color: navy;
+        }
+    .button.dark:hover {
+        background-color: black;
+        color: lightskyblue
+        }
+    .die-title:hover {
+        color: whitesmoke;
+        }
     }
