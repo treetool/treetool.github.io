@@ -7,7 +7,7 @@
     background-color: navy;
     }
 .button:active {
-    color: lightskyblue;
+    color: whitesmoke;
     background-color: navy;
     }
 .pressable {
@@ -56,8 +56,5 @@ hr {
     .button.dark:hover {
         background-color: black;
         color: lightskyblue
-        }
-    .die-title:hover {
-        color: whitesmoke;
         }
     }
