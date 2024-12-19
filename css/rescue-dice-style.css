@@ -207,4 +207,7 @@ hr {
         background-color: whitesmoke;
         color: navy;
         }
+    .die-title:hover {
+        color: lightskyblue;
+        }
     }
